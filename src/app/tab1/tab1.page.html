@@ -1,17 +1,56 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Conheça o Rio de Janeiro
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="content">
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-img src="../../assets/images/rj-cn.jpg"></ion-img>
+      <ion-card-title>Cidade Maravilhosa</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content class="ion-text-justify">
+      O Rio de Janeiro é uma grande cidade brasileira à beira-mar, famosa pelas praias de Copacabana e Ipanema, 
+      pela estátua de 38 metros de altura do Cristo Redentor, no topo do Corcovado, e pelo Pão de Açúcar, um pico de granito com teleféricos até seu cume. 
+      A cidade também é conhecida pelas grandes favelas. 
+      O empolgante Carnaval, com carros alegóricos, fantasias extravagantes e sambistas, é considerado o maior do mundo.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Segmentos</ion-card-title>
+    </ion-card-header>
+    <ion-item href="https://mapadeconflitos.ensp.fiocruz.br/conflito/rj-construcao-de-complexo-petroquimico-comperj-promete-empregos-e-progresso-mas-afeta-11-municipios-traz-riscos-a-populacao-e-contrapoe-os-executivos-com-o-tcu-e-o-mpf-que-questionam-a-obra/" 
+    class="ion-activated" target="_blank">
+      <ion-icon name="flask-outline"></ion-icon>
+      <ion-label>Petroquímica</ion-label>
+    </ion-item>
+
+    <ion-item href="https://secrj.org.br/" class="ion-activated" target="_blank">
+      <ion-icon name="pricetags-outline"></ion-icon>
+      <ion-label>Comércio</ion-label>
+    </ion-item>
+
+    <ion-item href="https://exame.com/brasil/os-pontos-turisticos-mais-visitados-do-rio-e-algumas-gratas-surpresas/" class="ion-activated" target="_blank">
+      <ion-icon name="images-outline"></ion-icon>
+      <ion-label>Turismo</ion-label>
+    </ion-item>
+
+    <ion-item href="https://www.rio.rj.gov.br/web/fpj/parques-urbanos" class="ion-activated" target="_blank">
+      <ion-icon name="golf-outline"></ion-icon>
+      <ion-label>Parques</ion-label>
+    </ion-item>
+
+    <ion-item href="https://www.melhoresdestinos.com.br/melhores-praias-rio-de-janeiro.html" class="ion-activated" target="_blank">
+      <ion-icon name="sunny-outline"></ion-icon>
+      <ion-label>Praias</ion-label>
+    </ion-item>
+  </ion-card>
+
 </ion-content>

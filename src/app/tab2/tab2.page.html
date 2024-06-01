@@ -1,17 +1,199 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Praias
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+ <ion-list>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="../../assets/images/praia-reserva.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text>
+          <h2>Praia da Reserva</h2>
+        </ion-text>
+        <p>Barra da Tijuca</p>
+      </ion-label>
+      <ion-note slot="end">Zona Oeste</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://www.instagram.com/vemprareserva/')" color="warning">
+        <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+      </ion-item-option>
+      <ion-item-option (click)="like()">
+        <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="../../assets/images/copacabana.webp">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text>
+          <h2>Praia de Copacabana</h2>
+        </ion-text>
+        <p>Copacabana</p>
+      </ion-label>
+      <ion-note slot="end">Zona Sul</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://www.tripadvisor.com.br/Attraction_Review-g303506-d312068-Reviews-Copacabana_Beach-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html')" color="warning">
+        <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+      </ion-item-option>
+      <ion-item-option (click)="like()">
+        <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="../../assets/images/impanema.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text>
+          <h2>Praia de Ipanema</h2>
+        </ion-text>
+        <p>Ipanema</p>
+      </ion-label>
+      <ion-note slot="end">Zona Sul</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://www.tripadvisor.com.br/Attraction_Review-g303506-d312071-Reviews-Ipanema_Beach-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html')" color="warning">
+        <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+      </ion-item-option>
+      <ion-item-option (click)="like()">
+        <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="../../assets/images/arpoador.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text>
+          <h2>Praia do Arpoador</h2>
+        </ion-text>
+        <p>Ipanema</p>
+      </ion-label>
+      <ion-note slot="end">Zona Sul</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://www.instagram.com/arpoadorrj/')" color="warning">
+        <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+      </ion-item-option>
+      <ion-item-option (click)="like()">
+        <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <!-- Novas Praias Adicionadas -->
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="../../assets/images/content_brazil-4809009_1280.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text>
+          <h2>Praia do Leblon</h2>
+        </ion-text>
+        <p>Leblon</p>
+      </ion-label>
+      <ion-note slot="end">Zona Sul</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://www.tripadvisor.com.br/Attraction_Review-g303506-d312072-Reviews-Leblon_Beach-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html')" color="warning">
+        <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+      </ion-item-option>
+      <ion-item-option (click)="like()">
+        <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="../../assets/images/depositphotos_463188228-stock-photo-aerial-view-botafogo-beach-sugarloaf.webp">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text>
+          <h2>Praia de Botafogo</h2>
+        </ion-text>
+        <p>Botafogo</p>
+      </ion-label>
+      <ion-note slot="end">Zona Sul</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://www.tripadvisor.com.br/Attraction_Review-g303506-d554380-Reviews-Botafogo_Bay-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html')" color="warning">
+        <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+      </ion-item-option>
+      <ion-item-option (click)="like()">
+        <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="../../assets/images/313268773_190504056801771_7917375232128557278_n-e1668854837548.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text>
+          <h2>Praia da Barra</h2>
+        </ion-text>
+        <p>Barra da Tijuca</p>
+      </ion-label>
+      <ion-note slot="end">Zona Oeste</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://www.tripadvisor.com.br/Attraction_Review-g303506-d554379-Reviews-Barra_da_Tijuca_Beach-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html')" color="warning">
+        <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+      </ion-item-option>
+      <ion-item-option (click)="like()">
+        <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="../../assets/images/praia-da-joatinga.webp">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text>
+          <h2>Praia da Joatinga</h2>
+        </ion-text>
+        <p>Joá</p>
+      </ion-label>
+      <ion-note slot="end">Zona Oeste</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://www.tripadvisor.com.br/Attraction_Review-g303506-d318211-Reviews-Joatinga_Beach-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html')" color="warning">
+        <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+      </ion-item-option>
+      <ion-item-option (click)="like()">
+        <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+ </ion-list>
+
 </ion-content>
