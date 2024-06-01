@@ -28,6 +28,14 @@ const routes: Routes = [
     path: 'parquequintadaboavista',
     loadChildren: () => import('./parques/parquequintadaboavista/parquequintadaboavista.module').then( m => m.ParquequintadaboavistaPageModule)
   },
+  {
+    path: 'parquecampodesantana',
+    loadChildren: () => import('./parques/parquecampodesantana/parquecampodesantana.module').then( m => m.ParquecampodesantanaPageModule)
+  },
+  {
+    path: 'parquedospatins',
+    loadChildren: () => import('./parques/parquedospatins/parquedospatins.module').then( m => m.ParquedospatinsPageModule)
+  },
  
 ];
 @NgModule({
