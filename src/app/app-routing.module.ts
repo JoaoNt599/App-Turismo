@@ -22,22 +22,13 @@ const routes: Routes = [
     path: 'parqueflamengo',
     loadChildren: () => import('./parques/parqueflamengo/parqueflamengo.module').then( m => m.ParqueflamengoPageModule)
   },
-  {
-    path: 'parquevilalobos',
-    loadChildren: () => import('./parques/parquevilalobos/parquevilalobos.module').then( m => m.ParquevilalobosPageModule)
-  },
-  {
-    path: 'parquemetropolitano',
-    loadChildren: () => import('./parques/parquemetropolitano/parquemetropolitano.module').then( m => m.ParquemetropolitanoPageModule)
-  },
+  
+  
   {
     path: 'parquequintadaboavista',
     loadChildren: () => import('./parques/parquequintadaboavista/parquequintadaboavista.module').then( m => m.ParquequintadaboavistaPageModule)
   },
-  {
-    path: 'parqueapoteose',
-    loadChildren: () => import('./parques/parqueapoteose/parqueapoteose.module').then( m => m.ParqueapoteosePageModule)
-  }
+ 
 ];
 @NgModule({
   imports: [
